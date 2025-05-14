@@ -195,3 +195,60 @@ article {
 .breadcrumb-nav li:last-child::after {
     content: "";
 }
+
+/* Featured Blogs Section */
+.featured-blogs {
+    margin-top: 40px;
+}
+
+.featured-blogs h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.featured-blogs .blog-item {
+    margin-bottom: 20px;
+}
+
+/* Author Section */
+.author-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.author-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Social Links Section */
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #b22222; /* Deep red for hover effect */
+}
