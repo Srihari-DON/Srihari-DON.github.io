@@ -1,66 +1,131 @@
+/* General Styles */
 body {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #f7f7f7; /* Nearly white */
-    color: #000; /* Black text */
+    font-family: "Georgia", serif; /* Classic serif font for editorial feel */
+    background: #ffffff; /* White background */
+    color: #333; /* Dark gray text */
     margin: 0;
     padding: 0;
+    line-height: 1.8;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background: #fff; /* White background for content */
 }
 
+/* Masthead */
 .site-header {
     text-align: center;
     margin-bottom: 40px;
-    border-bottom: 2px solid #000;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd; /* Subtle border */
 }
 
 .site-header h1 {
-    font-size: 3em;
+    font-family: "Times New Roman", serif; /* Classic serif font */
+    font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
+    color: #000; /* Black text */
 }
 
-.tagline {
+.site-header p {
     font-size: 1.2em;
-    color: #555; /* Slightly darker gray */
+    font-style: italic;
+    color: #555; /* Subtle gray for tagline */
 }
 
+/* Navigation */
 .main-nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
 .main-nav a {
     text-decoration: none;
-    color: #000;
+    color: #000; /* Black text */
     font-weight: bold;
+    font-size: 1.1em;
     text-transform: uppercase;
 }
 
 .main-nav a:hover {
-    text-decoration: underline;
+    color: #b22222; /* Deep red for hover effect */
 }
 
+/* Blog List */
 .blog-list {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
     gap: 20px;
 }
 
 .blog-item {
     padding: 20px;
-    border: 2px solid #000;
-    background-color: #fff; /* White background for blog items */
+    border: 1px solid #ddd; /* Light border */
+    background-color: #fff; /* White background */
+    transition: transform 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.blog-item h2 a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Times New Roman", serif;
+}
+
+.blog-item h2 a:hover {
+    color: #b22222; /* Deep red for hover effect */
+    text-decoration: underline;
+}
+
+/* Article Styles */
+article p:first-of-type::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+    color: #b22222; /* Deep red drop cap */
+}
+
+article {
+    text-align: justify; /* Justified text for print-like feel */
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+    background: #f1f1f1; /* Light gray background */
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.5em;
+    color: #fff; /* White text */
+    font-style: italic;
 }
 
 .blog-item h2 a {
@@ -70,15 +135,6 @@ body {
 
 .blog-item h2 a:hover {
     text-decoration: underline;
-}
-
-.site-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.8em;
-    color: #555;
-    border-top: 2px solid #000;
-    padding-top: 20px;
 }
 
 .about-content, .contact-content, .blog-content {
@@ -109,21 +165,24 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    justify-content: center;
 }
 
 .breadcrumb-nav li {
     display: inline;
+    font-size: 1em;
+    color: #555;
 }
 
 .breadcrumb-nav a {
     text-decoration: none;
-    color: #000;
+    color: #ff007f;
     font-weight: bold;
 }
 
 .breadcrumb-nav a:hover {
-    text-decoration: underline;
+    color: #000;
 }
 
 .breadcrumb-nav li::after {
