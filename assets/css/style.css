@@ -66,8 +66,9 @@ body {
 /* Blog List */
 .blog-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between blogs */
+    margin-top: 20px; /* Space above the blog list */
 }
 
 .blog-item {
@@ -75,11 +76,11 @@ body {
     border: 1px solid #ddd; /* Light border */
     background-color: #fff; /* White background */
     transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .blog-item:hover {
     transform: scale(1.02); /* Slight zoom on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .blog-item h2 a {
